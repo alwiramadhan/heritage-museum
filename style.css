@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.navbar {
+  background-color: #1919196e;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.navbar li {
+  padding: 0 12px;
+}
+
+.jumbotron {
+  z-index: 999;
+  color: #f0f0f0;
+  padding-top: 19rem;
+  height: 120vh;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Button */
+.btn-exlpore {
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.btn-exlpore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-exlpore:hover::before {
+  width: 100%;
+}
+
+.btn-exlpore:hover {
+  color: black;
+}
+
+.btn-exlpore:active:before {
+  background: #b9b9b9;
+}
+
+.museum h2 {
+  color: #1f1f1f;
+}
+
+.arts {
+  background-color: #242424;
+}
+
+.arts h2,
+.arts h3 {
+  color: #f0f0f0;
+}
+
+.embed-responsive {
+  object-fit: cover;
+}
+
+/* Sign In */
+.row-sign-in {
+  min-height: 70vh;
+  padding-top: 120px;
+  margin-bottom: 50px;
+}
